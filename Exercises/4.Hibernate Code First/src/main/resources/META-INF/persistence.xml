@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <!--Unit 1-->
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+    <persistence-unit name="CodeFirstEx">
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/code_first?createDatabaseIfNotExist=true"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="hibernate.connection.username" value="root"/>
+            <property name="hibernate.connection.password" value="1234"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+
+            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.format_sql" value="true"/>
+        </properties>
+    </persistence-unit>
+
+        <!--Unit 2-->
+<persistence-unit name="HospitalDatabase">
+    <class>_04_HospitalDatabase.entities.Patient</class>
+    <class>_04_HospitalDatabase.entities.Medication</class>
+    <class>_04_HospitalDatabase.entities.Diagnose</class>
+    <class>_04_HospitalDatabase.entities.Visitation</class>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+
+    <properties>
+        <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/hospital_database?createDatabaseIfNotExist=true"/>
+        <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="hibernate.connection.username" value="root"/>
+        <property name="hibernate.connection.password" value="1234"/>
+        <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
+        <property name="hibernate.hbm2ddl.auto" value="update"/>
+
+        <property name="hibernate.show_sql" value="true" />
+        <property name="hibernate.format_sql" value="true"/>
+    </properties>
+</persistence-unit>
+
+    <!--Unit 3-->
+    <persistence-unit name="BillingSystem">
+        <class>_05_BillsPayment_System.entities.Owner</class>
+        <class>_05_BillsPayment_System.entities.billing_details.BankAccount</class>
+        <class>_05_BillsPayment_System.entities.billing_details.CreditCard</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/billing_system?createDatabaseIfNotExist=true"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="hibernate.connection.username" value="root"/>
+            <property name="hibernate.connection.password" value="1234"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+
+            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.format_sql" value="true"/>
+        </properties>
+    </persistence-unit>
+</persistence>

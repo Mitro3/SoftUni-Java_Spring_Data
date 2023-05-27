@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/6.Spring Data Advanced Querying.iml" filepath="$PROJECT_DIR$/.idea/6.Spring Data Advanced Querying.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Advanced_Querying/springintro.iml" filepath="$PROJECT_DIR$/Advanced_Querying/springintro.iml" />
+    </modules>
+  </component>
+</project>
